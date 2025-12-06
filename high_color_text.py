@@ -3,9 +3,9 @@ RESET = "\033[0m"
 # 字体高亮（前景色）
 RESET = "\033[0m"
 YELLOW_FONT = "\033[93m"
-BLUE_FONT = "\033[34m"
+BLUE_FONT = "\033[1;94m"
 YELLOW_BG = "\033[103m"
-BLUE_BG = "\033[44m"
+BLUE_BG = "\033[104m"
 
 def highlight_text(text, color_type):
     """

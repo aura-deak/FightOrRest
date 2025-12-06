@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="227f4cf7-51b4-4c69-a1cc-30a63ba57226" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FightOrRest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clear_console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/high_color_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="227f4cf7-51b4-4c69-a1cc-30a63ba57226" name="更改" comment="项目基本框架构建">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high_color_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/high_color_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +40,7 @@
     "Python.run_with_linux_term.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/chen-shuhan/PycharmProjects/FightOrRest",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -98,6 +92,27 @@
       <option name="presentableId" value="Default" />
       <updated>1764987569510</updated>
     </task>
+    <task id="LOCAL-00001" summary="项目基本框架构建">
+      <option name="closed" value="true" />
+      <created>1764998995286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764998995286</updated>
+    </task>
+    <task id="LOCAL-00002" summary="项目基本框架构建">
+      <option name="closed" value="true" />
+      <created>1764999132284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764999132284</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目基本框架构建" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目基本框架构建" />
   </component>
 </project>

@@ -33,17 +33,21 @@ for week in range(0,len(a_year_list)-1):
         energy = 20
     if inspiration >= 20:
         inspiration = 20
-    answer = input("你可以输入r休息，或者输入f奋斗。输入q立即终止游戏。")
-    if answer == "r":
-        energy += 5
-        inspiration += 3
-    elif answer == "f":
-        energy -= 5
-        inspiration -= 3
-        add = 7 + random.randint(0,inspiration)
-        a_year_list[week] += add
-    else:
-        break
+    #死循环，直到玩家输入正确指令
+    while True:
+        answer = input("你可以输入r休息，或者输入f奋斗")
+        if answer == "r":
+            energy += 5
+            inspiration += 3
+            break
+        elif answer == "f":
+            energy -= 5
+            inspiration -= 3
+            add = 7 + random.randint(0,inspiration)
+            a_year_list[week] += add
+            break
+        else:
+            print("输入错误，请重新输入")
 total = 0
 for i in a_year_list:
     total += i
