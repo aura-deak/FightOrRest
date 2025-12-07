@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="227f4cf7-51b4-4c69-a1cc-30a63ba57226" name="更改" comment="项目基本框架构建">
+    <list default="true" id="227f4cf7-51b4-4c69-a1cc-30a63ba57226" name="更改" comment="docs(readme): 更新游戏规则说明&#10;&#10;- 简化标题表述&#10;- 调整指令输入描述，去除冗余内容&#10;- 优化奋斗效果的表述逻辑&#10;- 补充精力值为5时的特殊提醒&#10;- 删除重复的游戏玩法介绍章节&#10;- 优化排版提升可读性">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/high_color_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/high_color_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
     "Python.main.executor": "Run",
     "Python.run_with_linux_term.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -50,32 +50,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="run_with_linux_term" type="PythonConfigurationType" factoryName="Python">
-      <module name="FightOrRest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="TERM" value="Linux" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 (FightOrRest)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -108,11 +82,29 @@
       <option name="project" value="LOCAL" />
       <updated>1764999132284</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加死循环，以保证在不影响外部for循环的前提下获取正确的用户输入">
+      <option name="closed" value="true" />
+      <created>1764999755435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764999755435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs(readme): 更新游戏规则说明&#10;&#10;- 简化标题表述&#10;- 调整指令输入描述，去除冗余内容&#10;- 优化奋斗效果的表述逻辑&#10;- 补充精力值为5时的特殊提醒&#10;- 删除重复的游戏玩法介绍章节&#10;- 优化排版提升可读性">
+      <option name="closed" value="true" />
+      <created>1765002428459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765002428459</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目基本框架构建" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目基本框架构建" />
+    <MESSAGE value="添加死循环，以保证在不影响外部for循环的前提下获取正确的用户输入" />
+    <MESSAGE value="docs(readme): 更新游戏规则说明&#10;&#10;- 简化标题表述&#10;- 调整指令输入描述，去除冗余内容&#10;- 优化奋斗效果的表述逻辑&#10;- 补充精力值为5时的特殊提醒&#10;- 删除重复的游戏玩法介绍章节&#10;- 优化排版提升可读性" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(readme): 更新游戏规则说明&#10;&#10;- 简化标题表述&#10;- 调整指令输入描述，去除冗余内容&#10;- 优化奋斗效果的表述逻辑&#10;- 补充精力值为5时的特殊提醒&#10;- 删除重复的游戏玩法介绍章节&#10;- 优化排版提升可读性" />
   </component>
 </project>
