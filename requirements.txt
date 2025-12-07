@@ -1,0 +1,2 @@
+# 本项目仅使用 Python 标准库，无需额外依赖
+# 标准库模块: random, platform, subprocess
