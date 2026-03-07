@@ -8,11 +8,11 @@ energy = 20
 inspiration = 20
 
 
-for week in range(0,len(a_year_list)-1):
+for week in range(len(a_year_list)):
 
     def fight_log():
         text = ""
-        for i in range(0, len(a_year_list) - 1):
+        for i in range(len(a_year_list)):
             if i == week:
                 text += highlight_text(f"\t[{a_year_list[i]}]", "yellow_font")
             else:
@@ -43,7 +43,8 @@ for week in range(0,len(a_year_list)-1):
         elif answer == "f":
             energy -= 5
             inspiration -= 3
-            add = 7 + random.randint(0,inspiration)
+            effective_inspiration = max(0, inspiration)
+            add = 7 + random.randint(0, effective_inspiration)
             a_year_list[week] += add
             break
         else:
