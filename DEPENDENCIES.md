@@ -1,30 +1,30 @@
-# 项目依赖许可证清单
+# Project Dependency Licenses
 
-## 项目概述
+## Overview
 
-本项目（FightOrRest）是一个简单的 Python 命令行游戏，**仅使用 Python 标准库**，无需安装任何第三方依赖包。
+FightOrRest is a simple Python command-line game that **uses only the Python standard library** — no third-party packages required.
 
-## 使用的 Python 标准库模块
+## Standard Library Modules Used
 
-- `random` - 生成随机数
-- `platform` - 检测操作系统平台
-- `subprocess` - 执行系统命令
+- `random` — random number generation
+- `platform` — OS platform detection
+- `subprocess` — system command execution
 
-## 许可证说明
+## License
 
-由于本项目仅使用 Python 标准库，不涉及任何第三方依赖，因此不需要额外的许可证声明。
+Since this project only uses the Python standard library, no additional license declarations are needed for dependencies.
 
-项目本身采用 **GPL-3.0 许可证**，详见 [LICENSE](../LICENSE) 文件。
+The project itself is licensed under **GPL-3.0** — see the [LICENSE](../LICENSE) file.
 
-## 开发环境依赖（非运行时必需）
+## Development Dependencies (not required at runtime)
 
-以下包仅用于开发环境中的许可证检查工具，不是项目的运行时依赖：
+These packages are only used for license checking during development:
 
-| 工具名称 | 版本 | 许可证 | 用途 |
-|---------|------|--------|------|
-| licensecheck | 2025.1.0 | MIT | 许可证检查工具 |
-| pip-licenses | 5.5.0 | MIT | 生成许可证清单工具 |
+| Tool | Version | License | Purpose |
+|------|---------|---------|---------|
+| licensecheck | 2025.1.0 | MIT | License checking tool |
+| pip-licenses | 5.5.0 | MIT | License list generator |
 
-## 结论
+## Summary
 
-本项目完全独立，不依赖任何第三方库，可以直接在任何安装了 Python 3.x 的环境中运行。
+This project is fully self-contained with no third-party dependencies. It runs on any system with Python 3.x installed.

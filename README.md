@@ -1,59 +1,65 @@
-52周奋斗模拟游戏 - 介绍与帮助
+# 52-Week Fight or Rest — A Text Simulation Game
 
-# 一、游戏介绍
+## 1. About the Game
 
-## 1. 游戏核心定位
+### Core Concept
 
-这是一款轻量文字模拟游戏，核心是在一年52周内，在“休息”和“奋斗”间做选择，平衡精力与灵感，最终积累最高成就值。操作极简，仅靠文字交互，适合碎片化时间体验。
+A lightweight text-based simulation game where you make weekly choices between **resting** and **fighting** over 52 weeks. Balance your energy and inspiration to accumulate the highest possible achievement score. Minimal controls — just text input — perfect for quick sessions.
 
-## 2. 设计理念
+### Design Philosophy
 
-游戏源自“劳逸结合”的生活规律：过度透支会低效，过度休息则无收获。同时融入“努力有保底、收益看状态与机遇”的现实逻辑，通过52周时间、精力/灵感资源、成就值（含随机收益），让玩家直观感受“选择与代价”“努力与不确定性”。
+The game is built around the principle of **work-life balance**: burning out leads to inefficiency, while too much rest means no progress. It also incorporates a "guaranteed minimum + state-dependent bonus" model — effort always pays off, but *how much* depends on your current state and a bit of luck.
 
-## 3. 初始设定详解
+## 2. Setup
 
-- 时间维度：游戏以“周”为最小时间单位，总计覆盖52周（对应现实中一年的时间周期），玩家的决策将贯穿这52个周，每完成一次选择即推进一周。
+- **Duration**: 52 weeks (one decision per week)
+- **Resources**: Energy and Inspiration, both start at 20 (max 20)
+  - **Energy**: The cost of fighting. If it drops to 0, the game ends.
+  - **Inspiration**: Affects fight rewards. Acts as both a resource and a "reward multiplier."
+- **Achievement**: 52 slots (one per week), all start at 0. Fight results are recorded in real time.
 
-- 核心资源：精力值、灵感值初始均为20（上限20）。
-- 精力值：奋斗的基础消耗，过低则游戏结束；
-- 灵感值：影响奋斗收益，既是消耗品，也是“收益放大器”。
+## 3. How to Play
 
-- 成就记录：52周对应52个成就位，初始均为0，奋斗成果会实时记录，形成可视化轨迹，灵感值直接决定奋斗收益高低。
+### Display
 
-## 4. 核心玩法机制
+Each week shows three pieces of information:
+- **Achievement timeline**: All 52 weeks displayed, current week highlighted in yellow
+- **Resource status**: Energy and Inspiration shown in blue (out of 20)
+- **Week counter**: Current week number (e.g., Week 12/52) in blue
 
-### 4.1 信息展示机制
+### Actions
 
-每周开始会显示3类关键信息：52周成就轨迹（当前周黄色高亮）、精力/灵感值（蓝色高亮，上限20）、当前周数（第X/52周，蓝色高亮）。
+Each week, choose one of two actions:
 
-- 年度奋斗轨迹：以横向列表形式展示52周的成就值，当前所在周的数值会以黄色高亮标注，方便玩家直观定位自身进度。
+| Action | Input | Energy | Inspiration | Achievement |
+|--------|-------|--------|-------------|-------------|
+| **Rest** | `r` | +5 | +3 | None |
+| **Fight** | `f` | -5 | -3 | +7 + random(0, current inspiration) |
 
-- 实时资源状态：“精力值”与“灵感值”以蓝色高亮显示，同时标注资源上限（20），让玩家明确当前的资源储备情况。
+> The random bonus means higher inspiration = higher potential rewards. The fixed +7 guarantees that effort always produces *something*, while the random component mirrors real-life uncertainty.
 
-- 时间进度提示：明确标注当前是“第X/52周”（X为当前周数，蓝色高亮），帮助玩家掌握整体时间节奏。
+### Game Over
 
-### 4.2 决策与反馈机制
+The game ends in one of two ways:
+- **Forced end**: Energy or Inspiration drops to 0 or below. **Watch out when energy is at 5 — unless it's the final week, you must rest or the game ends!**
+- **Natural end**: All 52 weeks completed.
 
-每周仅需二选一操作，系统即时反馈结果：
+At the end, you'll see your total weeks played and cumulative achievement score.
 
-- 指令输入：提示“输入r休息，f奋斗”，输“r”或“f”即可。
+## 4. Tips
 
-- 休息（r）：精力+5，灵感+3（不超20），无成就；
-- 奋斗（f）：精力-5，灵感-3，成就+7+随机数（0≤随机数≤当前灵感值，灵感越高收益越好）。
-> 👉 随机数设计逻辑：“7点固定成就”确保努力必有收获，额外随机数则对应现实中“收获大小不确定”的特性——同样付出，会因当下状态（灵感值）或偶然因素产生差异。
+The key is **balance**: over-fighting drains your resources, but over-resting wastes potential. Keep inspiration high for better fight rewards. Rest when resources are low, fight when they're full.
 
-### 4.3 游戏结束与结算机制
+> Inspiration is your "reward multiplier" and the random bonus is your "reality simulator" — effort has a guaranteed floor, but returns depend on your state. Balance both to maximize your score.
 
-游戏结束分两种情况，结束后会显示参与周数和总成就值：
+## 5. Running the Game
 
-- 结束条件：
-- 强制结束：精力≤0或灵感≤0；**精力值为5的时候需特别注意，除非是最后一天，否则必须休息，否则游戏会强制结束。**
-- 自然结束：完成全部52周。
+```bash
+python main.py
+```
 
-- 结算内容：游戏结束后，系统会明确提示“游戏结束！”，并展示两项核心数据——“实际参与周数”（即从第1周至结束时的总周数）和“年度成就总值”（52周成就值的累加和，是衡量游戏成果的唯一指标）。
+Requires Python 3.x. No external dependencies — uses only the standard library.
 
-## 5. 温馨提示
+## License
 
-核心是“平衡”：过度奋斗易耗尽资源，过度休息则成就低。保持高灵感值能让奋斗收益更高，建议资源低时休息，充足时多奋斗。
-
-> 💡 核心设计提示：灵感值是“收益放大器”，随机数是“现实模拟器”——努力有保底，收获看状态，平衡二者才能高效积累成就。
+GPL-3.0 — see [LICENSE](LICENSE).

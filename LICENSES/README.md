@@ -1,13 +1,13 @@
-# 许可证说明
+# Licenses
 
-本项目的许可证文件按照开源惯例组织在此目录中。
+This directory contains the license files for this project, organized per open-source conventions.
 
-## 主要许可证
+## Main License
 
-- **GPL-3.0.txt**: GNU General Public License v3.0 - 本项目的主要许可证
+- **GPL-3.0.txt**: GNU General Public License v3.0 — the primary license for this project
 
-## 许可证使用
+## Usage
 
-本项目采用 GPL-3.0 许可证。在使用、修改或分发本项目的代码时，请确保遵守 GPL-3.0 许可证的条款和条件。
+This project is licensed under GPL-3.0. When using, modifying, or distributing this code, please ensure you comply with the terms of the GPL-3.0 license.
 
-有关 GPL-3.0 许可证的完整信息，请参阅 [GPL-3.0.txt](GPL-3.0.txt) 文件。
+For the full license text, see [GPL-3.0.txt](GPL-3.0.txt).
