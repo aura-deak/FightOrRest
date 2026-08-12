@@ -1,7 +1,3 @@
-![Stone Badge](https://stone.professorlee.work/api/stone/alu-deak/FightOrRest)
-
-网络上说说就得了，现实中谁不想急头白脸的在readme里养一只石墩子做宠物（
-
 # 52周奋斗模拟游戏 - 介绍与帮助
 
 ## 一、游戏介绍
